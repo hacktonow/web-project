@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import UserForm from './UserForm'
+
 
 
 
@@ -29,8 +29,7 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
    //this section for second form
-   const [openForm, setopenForm] =useState(false);
-
+  
   return (
     <>
       <nav className='navbar'>
@@ -95,12 +94,12 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-        {button && <Button buttonStyle='btn--outline' onClick={()=>{setopenForm(true);}}>Book a Flight</Button>}
+        {button && <Button buttonStyle='btn--outline' onClick={""}>Book a Flight</Button>}
         
         </div>
        
       </nav>
-      {openForm && <UserForm closeForm={setopenForm}    />}
+     
    
     
      

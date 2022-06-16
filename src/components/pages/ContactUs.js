@@ -15,42 +15,20 @@ export default function ContactUs(){
         <h1 className='contactus'>Contact Us</h1>
         <div>
         <div>
-  <Grid container spacing={10} marginBottom={50} marginLeft ={5}>
+  <Grid container spacing={10} marginBottom={50} marginLeft ={5} marginTop={20}>
   
-     <Grid xs={3}>
-     <Card sx={{ maxWidth: 400, height:500,border: '2px solid black' }}>
-     <CardHeader
-    
-    style={{ textAlign: 'center' }}
-    titleTypographyProps={{variant:'h4' }}
-    title="Contact Us"
-    
-  />
-  <Divider style={{ background: 'black' }} variant="middle"></Divider>
-  
-  <Typography marginLeft={5} marginTop={5} >
-   Phone:<a href="tel:020 3927 7690">020 3927 7690</a>
-   
-  </Typography>
-  <Typography marginLeft={5} marginTop={5} >
-   Email: customer.care@blisflights.co.ukz
-   
-  </Typography>
-    </Card>
      
-
-     </Grid>
     
    
    
-   <Grid xs={7}  marginTop={20} marginLeft={20} >
+   <Grid xs={6}  marginTop={0} marginLeft={0} >
    <Card sx={{ maxWidth: 500, height:500, border: '2px solid black' }} >
    
 
    <CardHeader
     style={{ textAlign: 'center' }}
     titleTypographyProps={{variant:'h4' }}    
-        title="PUT DATA"
+        title="Contact Through Email"
         
       />
        <Divider style={{ background: 'black' }} variant="middle"></Divider>
@@ -97,7 +75,54 @@ export default function ContactUs(){
     </Card>
    
    </Grid>
+   <Grid xs={4}  marginTop={0} marginRight={5}>
+   <Card sx={{ maxWidth: 700, height:500 }}>
+      
+   <CardHeader
+    
+        
+        title="Why Choice Us"
+        
+      />
+        <CardContent>
+       
+        <Typography variant="body2" color="text.secondary">
+        We here at Bliss Flight LTD have qualified team of airfare experts having many years of experience in the travel & tour sector.
+If you have any queries about our services, please drop us a line. We’ll be happy to answer your questions to our fullest abilities.
 
+        </Typography>
+      </CardContent>
+      
+    </Card>
+   
+   </Grid>
+   <Grid xs={3} marginTop={5} >
+     <Card sx={{ maxWidth: 400, height:300,border: '2px solid black' }}>
+     <CardHeader
+    
+    style={{ textAlign: 'center' }}
+    titleTypographyProps={{variant:'h4' }}
+    title="Contact Direct"
+    
+  />
+  <Divider style={{ background: 'black' }} variant="middle"></Divider>
+  
+  <Typography marginLeft={5} marginTop={5}  >
+       <div>Phone Number:</div>
+   <a href="tel:020 3927 7690">020 3927 7690</a>
+   
+  </Typography>
+  <Divider style={{ background: 'black' }} variant="middle"></Divider>
+  <Typography marginLeft={5} marginTop={5} color="black" >
+  <div>Email:</div>
+      info@theblissflights.co.uk
+   
+  </Typography>
+  <Divider style={{ background: 'black' }} variant="middle"></Divider>
+    </Card>
+     
+
+     </Grid>
   </Grid>
   </div>
 
