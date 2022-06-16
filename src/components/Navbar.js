@@ -29,14 +29,7 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
    //this section for second form
-   const{ openPopup, setOpenPopup}= useState(false);
-   
-   const  handleClickOpen = ()=>{
-
-   setOpenPopup(true);
-   };
-
-
+   const [openForm, setopenForm] =useState(false);
 
   return (
     <>
@@ -102,16 +95,16 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-        {button && <Button buttonStyle='btn--outline' onClick={handleClickOpen}>Book a Flight</Button>}
+        {button && <Button buttonStyle='btn--outline' onClick={()=>{setopenForm(true);}}>Book a Flight</Button>}
+        
         </div>
+       
       </nav>
-     <div>
-    <UserForm openPopup={openPopup} setOpenPopup={setOpenPopup}>
-
-    </UserForm>
+      {openForm && <UserForm closeForm={setopenForm}    />}
+   
+    
      
      
-     </div>
     
     </>
   );

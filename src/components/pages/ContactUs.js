@@ -33,7 +33,7 @@ export default function ContactUs(){
    
   </Typography>
   <Typography marginLeft={5} marginTop={5} >
-   Email: customer.care@blisflights.co.uk
+   Email: customer.care@blisflights.co.ukz
    
   </Typography>
     </Card>
