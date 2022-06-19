@@ -59,7 +59,7 @@ const flightg = ['0', '01', '02' , '03','04', '05' , '06', '07','08' ];
 
 
 
-const FlightForm = () => {
+export default function FlightForm  ()  {
 
   // this section for date
   const [datevalue, setdate ] = React.useState(new Date('2022-08-18T21:11:54'));
@@ -135,41 +135,37 @@ const FlightForm = () => {
       <Grid container spacing={2} >
          
            {/* first text field */}
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={6} lg={3}>
 
           <Grid>
             <label>Flying From</label>
           </Grid>
-          <TextField
-            required
-            id="full_name"
-            name="flyingfrom"
-            label="Airport, City, Countery"
-            fullWidth
-            autoComplete="family-name"
-            variant="outlined"
-          />
+          <Autocomplete
+      disablePortal
+      id="combo-box-demo"
+      options={airports}
+      
+      renderInput={(params) => <TextField {...params} label="City, Airport, Country"  variant='outlined'/>}
+    />
           
         </Grid>
             {/* second text field */}
        
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={6} lg={3}>
           
         <Grid>
             <label>Flying To</label>
           </Grid>
-          <TextField
-            required
-            id="flying-to"
-            name="flyingto"
-            label="Airport, City, Countery"
-            fullWidth
-            autoComplete="family-name"
-            variant="outlined"
-          />
+          <Autocomplete
+      disablePortal
+      id="combo-box-demo"
+      options={airports}
+     
+      renderInput={(params) => <TextField {...params} label="City, Airport, Country"  variant='outlined'/>}
+    />
         </Grid>
       {/* Departure select date */}
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} sm={3} lg={2}>
           <label>
             Departure
           </label>
@@ -181,7 +177,7 @@ const FlightForm = () => {
           value={datevalue}
           onChange={dateChange}
           name="departure"
-          renderInput={(params) => <TextField {...params} />}
+          renderInput={(params) => <TextField {...params}  variant='outlined'/>}
         />
         
         
@@ -193,7 +189,7 @@ const FlightForm = () => {
          {/* Returning select date */}
 
 
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} sm={3} lg={2}>
           <label>
             Returning
           </label>
@@ -206,7 +202,7 @@ const FlightForm = () => {
           value={datevalue2}
           onChange={dateChange2}
           name="departure"
-          renderInput={(params) => <TextField {...params} />}
+          renderInput={(params) => <TextField {...params} variant='outlined'/>}
         />
         
         
@@ -218,7 +214,7 @@ const FlightForm = () => {
 
           {/* Direct or indirect flight field */}
 
-        <Grid item xs={12} sm={2}>
+        <Grid item xs={12} sm={4} lg={2}>
         <Grid>
           <label>Direct Flight</label>
         </Grid>
@@ -237,7 +233,7 @@ const FlightForm = () => {
         options={flightb}
         name="direct"
         
-        renderInput={(params) => <TextField {...params}  />}
+        renderInput={(params) => <TextField {...params}  variant='outlined'  />}
       />
     
         
@@ -246,7 +242,7 @@ const FlightForm = () => {
             {/* Select Flight */}
 
 
-        <Grid item xs={12} sm={3}>
+        <Grid item xs={12} sm={3} lg={2}>
         <Grid>
           <label>Select Flight</label>
         </Grid>
@@ -263,14 +259,14 @@ const FlightForm = () => {
         id="controllable-states-demo"
         options={flightc}
         name="flight"
-        renderInput={(params) => <TextField {...params}  />}
+        renderInput={(params) => <TextField {...params} variant='outlined' />}
       />
     </Grid>
 
     {/* Select Flight Class */}
 
 
-    <Grid item xs={12} sm={3}>
+    <Grid item xs={12} sm={5} lg={3}>
         <Grid>
           <label>Class</label>
         </Grid>
@@ -289,7 +285,7 @@ const FlightForm = () => {
        
         renderInput={(params) => <TextField {...params}  
         name="Class"
-       
+        variant='outlined'
         />}
       />
     </Grid>
@@ -297,7 +293,7 @@ const FlightForm = () => {
      {/* Select Adult */}
 
 
-     <Grid item xs={12} sm={2}>
+     <Grid item xs={4} sm={2}>
         <Grid>
           <label>Adult</label>
         </Grid>
@@ -314,13 +310,13 @@ const FlightForm = () => {
         id="controllable-states-demo"
         options={flighte}
         name="adult"
-        renderInput={(params) => <TextField {...params}  />}
+        renderInput={(params) => <TextField {...params} variant='outlined' />}
       />
     </Grid>
 
       {/* this section for Child */}
 
-    <Grid item xs={12} sm={2}>
+    <Grid item xs={4} sm={2}>
         <Grid>
           <label>Child</label>
         </Grid>
@@ -337,12 +333,12 @@ const FlightForm = () => {
         id="controllable-states-demo"
         options={flightf}
         ame="adult"
-        renderInput={(params) => <TextField {...params}  />}
+        renderInput={(params) => <TextField {...params} variant='outlined' />}
       />
     </Grid>
      {/* this section for Infant */}
 
-     <Grid item xs={12} sm={2}>
+     <Grid item xs={4} sm={2}>
         <Grid>
           <label>Infant</label>
         </Grid>
@@ -359,11 +355,12 @@ const FlightForm = () => {
         id="controllable-states-demo"
         options={flightg}
         ame="infant"
-        renderInput={(params) => <TextField {...params}  />}
+        renderInput={(params) => <TextField {...params} variant='outlined' />}
       />
     </Grid>
+    <DialogActions>
 <Button className={classes.btn} onClick={handleClickOpen }>Search Flight</Button>
-
+    </DialogActions>
         </Grid>
        
     </React.Fragment>
@@ -417,8 +414,8 @@ const FlightForm = () => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
-          <input type="submit" value="Send" />
-
+         
+          <Button onClick={handleClose}>Submit</Button>
           {/* <Button >Submit</Button> */}
         </DialogActions>
       </Dialog>
@@ -431,6 +428,15 @@ const FlightForm = () => {
   
 }
 
-export default FlightForm
 
+// airpot data
+const airports = [
+  { label: 'Islamabad, Islamabad Intl [ISB], Pakistan' },
+  { label: 'Karachi, Quaid E Azam International [KHI], Pakistan' },
+  { label: 'Lahore, Lahore Arpt [LHE], Pakistan'  },
+  { label: 'Anaa Airport, Anaa, Tuamotus'  },
+  { label: 'Arrabury Airport, Queensland, Australia'  },
+  { label: '	El Arish International Airport, Egypt'  },
+  { label: ''  },
 
+];

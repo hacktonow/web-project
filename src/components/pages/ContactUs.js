@@ -9,45 +9,66 @@ import Grid from '@mui/material/Grid';
 import { fontFamily, height } from "@mui/system";
 import { grey } from "@mui/material/colors";
 export default function ContactUs(){
+         
 
+  
      return(
+      //  this section for picture
         <>
         <h1 className='contactus'>Contact Us</h1>
-        <div>
-        <div>
-  <Grid container spacing={10} marginBottom={50} marginLeft ={5} marginTop={20}>
+       
+        
+
+   
+
+  <Grid container spacing={2} xs={12}>
   
-     
+   {/* this section for why choice us  */}
     
+  <Grid xs={8}  lg={12}  marginTop={5} marginLeft={20} >
    
+        <Typography>
+          <h2>Why choice US</h2>
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        We here at Bliss Flight LTD have qualified team of airfare experts having many years of experience in the travel & tour sector.
+If you have any queries about our services, please drop us a line. We’ll be happy to answer your questions to our fullest abilities.
+
+        </Typography>
+      
    
-   <Grid xs={6}  marginTop={0} marginLeft={0} >
-   <Card sx={{ maxWidth: 500, height:500, border: '2px solid black' }} >
+   </Grid>
+
+    {/* this section for email form */}
+   <Grid xs={12}  lg={5} marginTop={3} marginLeft={23  } marginBottom={5} >
+  
    
 
    <CardHeader
-    style={{ textAlign: 'center' }}
+    
     titleTypographyProps={{variant:'h4' }}    
         title="Contact Through Email"
         
       />
-       <Divider style={{ background: 'black' }} variant="middle"></Divider>
-        <CardContent>
-      <Grid container spacing={2}>
-     <Grid item sx={6}  >
+      
+
+        
+      <Grid container spacing={2} marginTop={3}>
+     <Grid item sx={12} lg={6}  >
       <TextField  autoFocus id="outlined-basic" label="First Name" variant="outlined"  />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} lg={6}>
       <TextField id="outlined-basic" label="Last Name" variant="outlined" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} lg={6}>
       <TextField id="outlined-basic" label="Email" variant="outlined" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} lg={6}>
       <TextField id="outlined-basic" label="Contact No" variant="outlined" />
       </Grid>
       
       </Grid>
+      <Grid xs={12} lg={12}>
       <TextField
             
             margin="dense"
@@ -59,6 +80,8 @@ export default function ContactUs(){
             fullWidth
             variant="outlined"
           />
+      </Grid>
+      
         <Button variant="Primary" style={{
         borderRadius: 25,
         backgroundColor: "grey",
@@ -70,33 +93,13 @@ export default function ContactUs(){
         
     }} >Submit</Button>
      
-      </CardContent>
      
-    </Card>
-   
-   </Grid>
-   <Grid xs={4}  marginTop={0} marginRight={5}>
-   <Card sx={{ maxWidth: 700, height:500 }}>
-      
-   <CardHeader
     
-        
-        title="Why Choice Us"
-        
-      />
-        <CardContent>
-       
-        <Typography variant="body2" color="text.secondary">
-        We here at Bliss Flight LTD have qualified team of airfare experts having many years of experience in the travel & tour sector.
-If you have any queries about our services, please drop us a line. We’ll be happy to answer your questions to our fullest abilities.
-
-        </Typography>
-      </CardContent>
-      
-    </Card>
    
    </Grid>
-   <Grid xs={3} marginTop={5} >
+   
+    {/* this section for numbe & email  */}
+   <Grid xs={12}  lg={3} marginTop={15} marginLeft={5 } marginBottom={5} >
      <Card sx={{ maxWidth: 400, height:300,border: '2px solid black' }}>
      <CardHeader
     
@@ -124,9 +127,9 @@ If you have any queries about our services, please drop us a line. We’ll be ha
 
      </Grid>
   </Grid>
-  </div>
 
-        </div>
+
+        
         </>
      )
 

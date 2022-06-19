@@ -3,6 +3,8 @@ import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
+import { DialogActions } from '@material-ui/core';
+
 
 
 
@@ -29,7 +31,19 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
    //this section for second form
-  
+//    const[open, setopen] = React.useState(false);
+   
+//  const handleOpen=()=>{
+
+// setopen(true);
+
+//   }
+//   const handleClose=()=>{
+
+//     setopen(true);
+    
+//       }
+
   return (
     <>
       <nav className='navbar'>
@@ -94,13 +108,15 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-        {button && <Button buttonStyle='btn--outline' onClick={""}>Book a Flight</Button>}
-        
+          <DialogActions>
+        {button && <Button buttonStyle='btn--outline'  >Book a Flight</Button>}
+        </DialogActions>
         </div>
        
       </nav>
+    
      
-   
+      {/* <UserForm open={open} onClose={handleClose} /> */}
     
      
      

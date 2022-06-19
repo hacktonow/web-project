@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import CardHeader from '@mui/material/CardHeader';
-import Box from '@mui/material/Box';
+
 import { CardActions, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
@@ -21,12 +21,12 @@ export default function AboutUs() {
   <div>
   <Grid container spacing={10} marginBottom={50} marginLeft ={5}>
   
-     <Grid xs={3}>
-     <Card sx={{ maxWidth: 400 }}>
+     <Grid xs={3} >
+     <Card sx={{ maxWidth: 500  }} variant="outlined">
       <CardMedia
-     
+        
         component="img"
-        height="500"
+        height="200 "
         image="/images/aboutplane.jpg"
         alt="green iguana"
       />
@@ -39,7 +39,7 @@ export default function AboutUs() {
     
    
    
-   <Grid xs={7}  marginTop={20} marginLeft={5}>
+   <Grid xs={4} sm={5}  marginTop={20} marginLeft={5}>
    <Card sx={{ maxWidth: 700, height:900 }}>
       
    <CardHeader

@@ -8,7 +8,10 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+        Email: info@theblissflight.co.uk 
+        </p>
+        <p className='footer-subscription-heading'>
+         Phone: 020 3927 7690
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -22,38 +25,36 @@ function Footer() {
               placeholder='Your Email'
             />
             <Button buttonStyle='btn--outline'>Subscribe</Button>
+           
           </form>
+         
         </div>
+         
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
+            <h2>Menus</h2>
+            <Link to='/'>Home</Link> 
+            <Link to='contact-us'>Contact Us</Link>
+            <Link to='/about-us'>About Us</Link>
+            <Link to='/flights'>Flights</Link>
+            <Link to='/Destinations'>Destinations</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <Link to='/'>Contact Us</Link>
+            <Link to='/'>About Us</Link>
+            <Link to='/'>Flights</Link>
+            
           </div>
         </div>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
+          
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
+            <Link to='/www.instagram.com'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
@@ -78,9 +79,7 @@ function Footer() {
             >
               <i class='fab fa-facebook-f' />
             </Link>
-            <a href="https://twitter.com/saigowthamr/" target="_blank" rel="noreferrer noopener">
-            <i class='fab fa-facebook-f' />
-</a>
+           
             <Link
               class='social-icon-link instagram'
               to = '/'
