@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
+import Dropdown  from './Dropdown'
 import { DialogActions } from '@material-ui/core';
 
 
@@ -30,6 +30,23 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
+
+   // this section for dropdown
+   const [dropdown, setDropdown]= useState(false);
+   const onMouseEnter = () => {
+    if (window.innerWidth <= 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+  const onMouseLeave = () => {
+    if (window.innerWidth <= 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
    //this section for second form
 //    const[open, setopen] = React.useState(false);
    
@@ -79,14 +96,17 @@ function Navbar() {
                 Flights
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav-item' onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            >
               <Link
                 to='/Destinations'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Destinations
+                Destinations <i className='fa fa-caret-down'/>
               </Link>
+              {dropdown && <Dropdown/>}
             </li>
             <li className='nav-item'>
               <Link
