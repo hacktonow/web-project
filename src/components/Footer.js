@@ -7,28 +7,9 @@ function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-        Email: info@theblissflight.co.uk 
-        </p>
-        <p className='footer-subscription-heading'>
-         Phone: 020 3927 7690
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-           
-          </form>
+       
          
-        </div>
+       
          
       </section>
       <div class='footer-links'>
@@ -60,6 +41,7 @@ function Footer() {
             <Link to='/'>Twitter</Link>
           </div>
         </div>
+        
       </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
