@@ -1,0 +1,8 @@
+.navA{
+    display: flex;
+   width: 100%;
+  
+  }
+  .aContainer{
+      flex: 4;
+  }

@@ -14,14 +14,29 @@ import Asia from './components/pages/Asia';
 import Europe from './components/pages/Europe';
 import FarEast from './components/pages/FarEast';
 import MiddleEast from './components/pages/MiddleEast';
+import Admin from './dashboard/Admin';
+import Userlist from './dashboard/pages/userlist/Userlist';
+import { Airlines } from '@mui/icons-material';
+import Destinations from './components/pages/Destinations';
+import Airline from './dashboard/pages/airlines/Airlines';
+import Locations from './dashboard/pages/destination/Locations';
+import Fclasses from './dashboard/pages/classes/Fclasses';
+import SeasionalFares from './dashboard/pages/seasonalfares/SeasonalFares';
+
+
+
+
 
 
 function App() {
   return (
     <>
+    
       <Router>
-        <Navbar />
+      
+      
         <Switch>
+
           <Route path='/' exact component={Home} />
           <Route path='/about-us' component={Services} />
           <Route path='/flights' component={Products} />
@@ -33,11 +48,21 @@ function App() {
           <Route path='/asia' component={Asia} />
           <Route path='/far_east' component={FarEast} />
           <Route path='/middle_east' component={MiddleEast} />
-        
+         {/* this section for admin panel */}
+
+         <Route path='/admin' component={Admin} />
+         <Route path='/user' component={Userlist} />
+         <Route path='/airline' component={Airline} />
+         <Route path='/locations' component={Locations} />
+         
+         <Route path='/seasional_fares' component={SeasionalFares} />
+         <Route path='/f_classes' component={Fclasses} />
          
         </Switch>
-       <Footer/>
+       
       </Router>
+     
+      
     </>
   );
 }

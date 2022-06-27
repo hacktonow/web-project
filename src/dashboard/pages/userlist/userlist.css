@@ -1,0 +1,8 @@
+.navu{
+  display: flex;
+  width: 100%;
+
+}
+.uContainer{
+    flex: 4;
+}

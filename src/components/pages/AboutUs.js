@@ -7,6 +7,7 @@ import CardHeader from '@mui/material/CardHeader';
 
 import { CardActions, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
+import Navbar from '../Navbar';
 
 
 export default function AboutUs() {
@@ -14,6 +15,7 @@ export default function AboutUs() {
   return (
   
  <>
+ <Navbar/>
  <div className='aboutus'>
   <h1 >About Us</h1>
   </div>

@@ -8,6 +8,8 @@ import { CardActions, Typography, Button, TextField, Divider } from '@mui/materi
 import Grid from '@mui/material/Grid';
 import { fontFamily, height } from "@mui/system";
 import { grey } from "@mui/material/colors";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 export default function ContactUs(){
          
 
@@ -15,6 +17,7 @@ export default function ContactUs(){
      return(
       //  this section for picture
         <>
+        <Navbar/>
         <h1 className='contactus'>Contact Us</h1>
        
         
@@ -129,7 +132,7 @@ If you have any queries about our services, please drop us a line. We’ll be ha
   </Grid>
 
 
-        
+        <Footer/>
         </>
      )
 
