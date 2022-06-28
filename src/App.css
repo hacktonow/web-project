@@ -72,3 +72,40 @@
   font-size: 100px;
 }
 
+.topnav{
+  
+  width: 100%;
+  
+  display: flex;
+  background-color: rgb(109, 109, 109);
+  height: 50px;
+  padding-top: 8px;
+  justify-content: space-between;
+  color: rgb(229, 226, 226);
+  
+}
+.phone{
+  margin-right: 20px;
+  display: flex;
+}
+.email{
+  
+  display: flex;
+  margin-left: 15px;
+  color: rgb(229, 226, 226);
+}
+.email a{
+  color: rgb(229, 226, 226);
+  text-decoration: none;
+}
+.email a:hover{
+   color: rgb(68, 68, 68);
+}
+@media screen and (max-width: 768px) {
+  .topnav{
+
+    display: none;
+  }
+
+
+}

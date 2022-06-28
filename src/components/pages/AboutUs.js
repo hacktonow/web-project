@@ -8,6 +8,7 @@ import CardHeader from '@mui/material/CardHeader';
 import { CardActions, Typography, Button } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 
 export default function AboutUs() {
@@ -68,6 +69,7 @@ We do not covet anything more than sharing your marvel as you discover the globe
 
   </Grid>
   </div>
+  <Footer/>
  </>
   )
 
