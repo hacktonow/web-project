@@ -9,6 +9,7 @@ import './HeroSection.css';
 
 
 
+
 const useStyles = makeStyles(theme =>({
   pageContent:{
     margin: theme.spacing(5),
@@ -27,11 +28,11 @@ function HeroSection() {
   return (
    <>
     <div className='hero-container'>
-      
+    <video src='/videos/airplane.mp4' autoPlay loop muted />
       <h1>Best Traveler Agency</h1>
       <p>What are you waiting for?</p>
      
-
+   
       
       <Paper className={classes.pageContent} > 
          <FlightForm/>

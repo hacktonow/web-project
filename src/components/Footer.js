@@ -2,17 +2,22 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import { Email } from '@mui/icons-material';
+import CallTwoToneIcon from '@mui/icons-material/CallTwoTone';
+import LocationOnTwoToneIcon from '@mui/icons-material/LocationOnTwoTone';
 
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
-       
-         
-       
-         
-      </section>
+    <div className='logo-container'>
+    <Link to='/' className='logo'>
+            Bliss Flight
+            <i class='fab fa-typo3' />
+          </Link>
+            
+      </div>
       <div class='footer-links'>
+      
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Menus</h2>
@@ -23,36 +28,32 @@ function Footer() {
             <Link to='/Destinations'>Destinations</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact Us</Link>
-            <Link to='/'>About Us</Link>
-            <Link to='/'>Flights</Link>
-            
-          </div>
+         
         </div>
         <div className='footer-link-wrapper'>
           
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/www.instagram.com'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
+          
+
         </div>
+        <div class='footer-link-items'>
+            <h2>Contact Us</h2>
+            <div className='email-phone'>
         
-      </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              Bliss Flight
-              <i class='fab fa-typo3' />
-            </Link>
+        <h4 className='email'>
+        <Email/> <a className='email' href='mailto:info@theblissflight.co.uk' >info@theblissflight.co.uk</a> </h4>
+        <h4 className='phone'>
+         <CallTwoToneIcon className='picon'  />
+         020 3927 7690 </h4>
+           <h4 className='address'>
+              <LocationOnTwoToneIcon className='aicon'/>
+              United Kigdom
+            </h4>
+            </div>
+            
+            
           </div>
-          <small class='website-rights'>Bliss_Flight © 2022</small>
-          <div class='social-icons'>
+      </div>
+      <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
               to='/'
@@ -61,10 +62,9 @@ function Footer() {
             >
               <i class='fab fa-facebook-f' />
             </Link>
-           
             <Link
               class='social-icon-link instagram'
-              to = '/'
+              to='/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -80,7 +80,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='twitter.com'
+              to='/'
               target='_blank'
               aria-label='Twitter'
             >
@@ -95,9 +95,12 @@ function Footer() {
               <i class='fab fa-linkedin' />
             </Link>
           </div>
-        </div>
-      </section>
-    </div>
+       <p3 className='copy-rights'>
+        All rights reverse.
+       </p3>
+
+     </div>
+    
   );
 }
 

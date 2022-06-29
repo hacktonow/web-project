@@ -1,6 +1,9 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { Grid } from '@mui/material';
+import { Avatar, Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton, Paper, Typography } from '@material-ui/core';
+import { red } from '@mui/material/colors';
 
 function Cards() {
   return (
@@ -44,6 +47,91 @@ function Cards() {
           </ul>
         </div>
       </div>
+      <div className='below-card'>
+        
+      <h2>Why travel through Bliss_Flight</h2>
+      <div>
+       <Grid container spacing={1}>
+
+        <Grid item xs={12} lg={4}>
+        <Card sx={{ minWidth: 275 }}>
+        <CardHeader
+        
+        title="Hassle-free Booking"
+        />
+        <Divider/>
+      <CardContent>
+        <Typography variant="body2">
+          Whether you are searching for flights,hotel rooms resorts,
+          holidy packages or transfer option you can find it all here 
+          under one umbrella, all at your disposal, just a few clicks 
+          away
+         
+         
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+          
+        </Grid>
+        <Grid item xs={12} lg={4}>
+        <Card sx={{ minWidth: 275 }}>
+        <CardHeader
+        title="Trusted TRavel Agents in UK"
+        />
+        <Divider/>
+      <CardContent>
+        <Typography variant="body2">
+          The process for booking your vacation is seamless, with timely
+          confirmations and swift follow_ups.
+          With us, your data is kept secure and 
+          trade associations like ABTA.
+         
+         
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+          
+        </Grid>
+        <Grid item xs={12} lg={4}>
+        <Card sx={{ minWidth: 275 }}>
+        <CardHeader
+        title="Expert Travel Advice"
+        />
+<Divider/>
+
+      <CardContent>
+        <Typography variant="body2">
+         Over time we have built expertise
+         and proficiency that is unmatched in the UK tourism market
+         Our experts would be by your side throughout your trip,
+         only a phone call away.
+         
+         
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+          
+        </Grid>
+        
+        
+        
+
+
+
+
+       </Grid>
+       </div>
+      </div>
+     
     </div>
   );
 }
