@@ -5,6 +5,7 @@
 
 h1 {
   text-align: center;
+  margin-top: 40px;
 }
 
 .cards__container {
@@ -63,11 +64,12 @@ h1 {
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
-  background-color: #1f98f4;
+  background-color: #ff3c00;
   box-sizing: border-box;
+  font-family: 'bahnschrift';
 }
 
 .cards__item__img {
@@ -98,7 +100,12 @@ h1 {
   font-size: 18px;
   line-height: 24px;
 }
-
+.below-card h2{
+  font-size: 30px;
+  position: relative;
+  left: 5%;
+  margin-bottom: 20px;
+}
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;

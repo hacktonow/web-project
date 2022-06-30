@@ -8,98 +8,49 @@ import LocationOnTwoToneIcon from '@mui/icons-material/LocationOnTwoTone';
 
 function Footer() {
   return (
-    <div className='footer-container'>
-    <div className='logo-container'>
-    <Link to='/' className='logo'>
-            Bliss Flight
-            <i class='fab fa-typo3' />
-          </Link>
-            
-      </div>
-      <div class='footer-links'>
-      
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Menus</h2>
-            <Link to='/'>Home</Link> 
-            <Link to='contact-us'>Contact Us</Link>
-            <Link to='/about-us'>About Us</Link>
-            <Link to='/flights'>Flights</Link>
-            <Link to='/Destinations'>Destinations</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-         
-        </div>
-        <div className='footer-link-wrapper'>
-          
-          
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			{/* <img src='logo192.png' className='f-logo'/> */}
+          <h2 className='f-logo'>The Bliss Flights</h2>
+          <p>Welcome to the world of Blessings where all your travel dreams come true!
+             Do you always dream about perfect holiday? But you are confused where to get the best cheap deals for your holidays
+              or business trips? Then Bliss Flights is the right choice for you!
+             If you wish to travel far and fast like travel light, pack your entire wish and take off all your troubles.</p>
+  	 			
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Office</h4>
+           <p>10-11 Percy St,</p>
+           <p>London W1T 1DN, United Kingdom</p>
+           <p className='f-email'>Info@theblissflight.com</p>
+           <h3>020 3927 7690</h3>
 
-        </div>
-        <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <div className='email-phone'>
-        
-        <h4 className='email'>
-        <Email/> <a className='email' href='mailto:info@theblissflight.co.uk' >info@theblissflight.co.uk</a> </h4>
-        <h4 className='phone'>
-         <CallTwoToneIcon className='picon'  />
-         020 3927 7690 </h4>
-           <h4 className='address'>
-              <LocationOnTwoToneIcon className='aicon'/>
-              United Kigdom
-            </h4>
-            </div>
-            
-            
-          </div>
-      </div>
-      <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
-          </div>
-       <p3 className='copy-rights'>
-        All rights reverse.
-       </p3>
-
-     </div>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Get Help</h4>
+  	 			<ul>
+  	 				<li><a href="#">Home</a></li>
+  	 				<li><a href="#">About_Us</a></li>
+  	 				<li><a href="#">Contact_Us</a></li>
+  	 				<li><a href="#">Flights</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+     <hr/>
+     <p className='copyright'>Bliss Fligt © 2022 - All Rights Reserved</p>
+  </footer>
     
   );
 }

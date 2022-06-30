@@ -28,7 +28,7 @@ function HeroSection() {
   return (
    <>
     <div className='hero-container'>
-    <video src='/videos/airplane.mp4' autoPlay loop muted />
+    {/* <video src='/videos/airplane.mp4' autoPlay loop muted /> */}
       <h1>Best Traveler Agency</h1>
       <p>What are you waiting for?</p>
      

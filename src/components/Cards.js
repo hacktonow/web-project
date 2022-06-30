@@ -3,11 +3,99 @@ import './Cards.css';
 import CardItem from './CardItem';
 import { Grid } from '@mui/material';
 import { Avatar, Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton, Paper, Typography } from '@material-ui/core';
-import { red } from '@mui/material/colors';
+import { fontFamily } from '@mui/joy/styles/styleFunctionSx';
+
+
+
 
 function Cards() {
+ 
+  
   return (
+    
     <div className='cards'>
+      <div className='below-card'>
+        
+        <h2 >BOOK YOUR HOLIDAY WITH COMPLETE CONFIDENCE</h2>
+        <div>
+         <Grid container spacing={4}>
+  
+          <Grid item xs={12} lg={4}>
+          <Card sx={{ minWidth: 275  }} >
+          <CardHeader
+         
+           style={{backgroundColor: "#ff3c00", fontFamily:"Swis721 BT"}}
+           avatar={<Avatar alt="Apple" src="images/plan.png" />}
+          title="Hassle-free Booking "
+          />
+          <Divider/>
+        <CardContent>
+          <Typography variant="body2">
+          Bliss Flights is the UK's largest independent travel agent.
+           Whether you'd like a short UK break, a sunny package holiday,
+            an all inclusive getaway or something else entirely,
+             our team will help you book the holiday of your dreams.
+           
+           
+          </Typography>
+        </CardContent>
+        
+      </Card>
+            
+          </Grid>
+          <Grid item xs={12} lg={4}>
+          <Card sx={{ minWidth: 275 }} >
+          <CardHeader
+           style={{backgroundColor: "#ff3c00"}}
+           avatar={<Avatar alt="Apple" src="images/location.png" />}
+          title="Trusted TRavel Agents in UK"
+          />
+          <Divider/>
+        <CardContent>
+          <Typography variant="body2">
+          Our Peace of Mind Guarantee means you can enjoy flexible, secure holidays, 
+          with free amendments up to 14 days before your departure date (Fare Diff Applicable). 
+           
+           
+          </Typography>
+        </CardContent>
+        
+      </Card>
+            
+          </Grid>
+          <Grid item xs={12} lg={4}>
+          <Card sx={{ minWidth: 275 }} >
+          <CardHeader
+         style={{backgroundColor: "#ff3c00"}}
+         
+          avatar={<Avatar alt="Apple" src="images/man.png" />}
+          title="Expert Travel Advice"
+          />
+  <Divider  />
+  
+        <CardContent>
+          <Typography variant="body2">
+          As one of the country’s leading holiday companies, we provide holidays worth getting excited for. 
+          Book your holiday with one of our expert travel agents today.
+           
+           
+          </Typography>
+        </CardContent>
+        
+      </Card>
+            
+          </Grid>
+          
+          
+          
+  
+  
+  
+  
+         </Grid>
+         </div>
+        </div>
+        {/* this section for cards */}
       <h1>Check out these EPIC Destinations!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
@@ -47,90 +135,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <div className='below-card'>
-        
-      <h2>Why travel through Bliss_Flight</h2>
-      <div>
-       <Grid container spacing={1}>
-
-        <Grid item xs={12} lg={4}>
-        <Card sx={{ minWidth: 275 }}>
-        <CardHeader
-        
-        title="Hassle-free Booking"
-        />
-        <Divider/>
-      <CardContent>
-        <Typography variant="body2">
-          Whether you are searching for flights,hotel rooms resorts,
-          holidy packages or transfer option you can find it all here 
-          under one umbrella, all at your disposal, just a few clicks 
-          away
-         
-         
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-          
-        </Grid>
-        <Grid item xs={12} lg={4}>
-        <Card sx={{ minWidth: 275 }}>
-        <CardHeader
-        title="Trusted TRavel Agents in UK"
-        />
-        <Divider/>
-      <CardContent>
-        <Typography variant="body2">
-          The process for booking your vacation is seamless, with timely
-          confirmations and swift follow_ups.
-          With us, your data is kept secure and 
-          trade associations like ABTA.
-         
-         
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-          
-        </Grid>
-        <Grid item xs={12} lg={4}>
-        <Card sx={{ minWidth: 275 }}>
-        <CardHeader
-        title="Expert Travel Advice"
-        />
-<Divider/>
-
-      <CardContent>
-        <Typography variant="body2">
-         Over time we have built expertise
-         and proficiency that is unmatched in the UK tourism market
-         Our experts would be by your side throughout your trip,
-         only a phone call away.
-         
-         
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
-          
-        </Grid>
-        
-        
-        
-
-
-
-
-       </Grid>
-       </div>
-      </div>
+      
      
     </div>
   );
