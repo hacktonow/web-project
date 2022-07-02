@@ -34,7 +34,7 @@ function Footer() {
   	 				<li><a href="#">Home</a></li>
   	 				<li><a href="#">About_Us</a></li>
   	 				<li><a href="#">Contact_Us</a></li>
-  	 				<li><a href="#">Flights</a></li>
+  	 				<li><a href="#">Terms & Conditions</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
@@ -49,7 +49,7 @@ function Footer() {
   	 	</div>
   	 </div>
      <hr/>
-     <p className='copyright'>Bliss Fligt © 2022 - All Rights Reserved</p>
+     <p className='copyright'>The Bliss Fligt © 2022 - All Rights Reserved. </p>
   </footer>
     
   );

@@ -93,7 +93,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Flights
+               Cheap Flights
               </Link>
             </li>
             <li className='nav-item' onMouseEnter={onMouseEnter}
@@ -104,9 +104,10 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Destinations <i className='fa fa-caret-down'/>
+               Holydays <i className='fa fa-caret-down'/>
               </Link>
-              {dropdown && <Dropdown/>}
+              
+              {/* {dropdown && <Dropdown/>} */}
             </li>
             <li className='nav-item'>
               <Link

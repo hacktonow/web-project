@@ -5,12 +5,23 @@ import { Grid } from '@mui/material';
 import { Avatar, Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton, Paper, Typography } from '@material-ui/core';
 import { fontFamily } from '@mui/joy/styles/styleFunctionSx';
 
+import{makeStyles} from '@material-ui/core'
+import { fontSize } from '@mui/system';
+import { red } from '@mui/material/colors';
 
-
+const useStyles = makeStyles(theme =>(
+  {
+    title:{
+      fontFamily: 'Swis721 BT',
+      fontSize:"20px",
+     
+    },
+  }
+));
 
 function Cards() {
  
-  
+  const classes = useStyles();
   return (
     
     <div className='cards'>
@@ -21,13 +32,14 @@ function Cards() {
          <Grid container spacing={4}>
   
           <Grid item xs={12} lg={4}>
-          <Card sx={{ minWidth: 275  }} >
+          <Card sx={{ minWidth: 275  }} elevation={1} >
           <CardHeader
-         
+           
            style={{backgroundColor: "#ff3c00", fontFamily:"Swis721 BT"}}
            avatar={<Avatar alt="Apple" src="images/plan.png" />}
           title="Hassle-free Booking "
           />
+          
           <Divider/>
         <CardContent>
           <Typography variant="body2">
@@ -44,7 +56,7 @@ function Cards() {
             
           </Grid>
           <Grid item xs={12} lg={4}>
-          <Card sx={{ minWidth: 275 }} >
+          <Card sx={{ minWidth: 275 }} elevation={1}>
           <CardHeader
            style={{backgroundColor: "#ff3c00"}}
            avatar={<Avatar alt="Apple" src="images/location.png" />}
@@ -64,7 +76,7 @@ function Cards() {
             
           </Grid>
           <Grid item xs={12} lg={4}>
-          <Card sx={{ minWidth: 275 }} >
+          <Card sx={{ minWidth: 275 }} elevation={1} >
           <CardHeader
          style={{backgroundColor: "#ff3c00"}}
          
