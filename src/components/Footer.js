@@ -34,7 +34,7 @@ function Footer() {
   	 				<li><a href="#">Home</a></li>
   	 				<li><a href="#">About_Us</a></li>
   	 				<li><a href="#">Contact_Us</a></li>
-  	 				<li><a href="#">Terms & Conditions</a></li>
+  	 				<li><a href="/terms_conditions">Terms & Conditions</a></li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
@@ -43,7 +43,7 @@ function Footer() {
   	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
   	 				<a href="#"><i class="fab fa-twitter"></i></a>
   	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 				<a href="/"><i class="fab fa-linkedin-in"></i></a>
   	 			</div>
   	 		</div>
   	 	</div>

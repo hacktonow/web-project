@@ -22,6 +22,7 @@ import Airline from './dashboard/pages/airlines/Airlines';
 import Locations from './dashboard/pages/destination/Locations';
 import Fclasses from './dashboard/pages/classes/Fclasses';
 import SeasionalFares from './dashboard/pages/seasonalfares/SeasonalFares';
+import { Terms } from './components/pages/Terms';
 
 
 
@@ -57,6 +58,7 @@ function App() {
          
          <Route path='/seasional_fares' component={SeasionalFares} />
          <Route path='/f_classes' component={Fclasses} />
+         <Route path='/terms_conditions' component={Terms} />
          
         </Switch>
        
