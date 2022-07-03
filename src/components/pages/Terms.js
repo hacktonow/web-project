@@ -1,7 +1,13 @@
 import React from 'react'
+import Footer from '../Footer'
+import Navbar from '../Navbar'
+import { Topnav } from '../Topnav'
 import "./terms.css"
 export const Terms = () => {
   return (
+    <>
+    <Topnav/>
+    <Navbar/>
     <div className='term-container'>
     <h2>TERMS AND CONDITIONS</h2>
     <h4>• IT IS IMPORTANT THAT YOU ARE AWARE OF THE FOLLOWING TERMS AND CONDITIONS</h4>
@@ -171,5 +177,7 @@ For more information on avoiding health risks, planning for healthy travelling a
     </p1>
     
   </div>
+  <Footer/>
+  </>
   )
 }

@@ -29,7 +29,7 @@ function HeroSection() {
    <>
     <div className='hero-container'>
     <video src='/videos/airplane.mp4' autoPlay loop muted />
-      <h1>Best Traveler Agency</h1>
+      <h1>Best Travel Agency</h1>
       <p>What are you waiting for?</p>
      
    

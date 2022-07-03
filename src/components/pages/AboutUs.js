@@ -1,14 +1,12 @@
 import React from 'react';
 import '../../App.css';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CardHeader from '@mui/material/CardHeader';
+
 import './aboutUs.css'
-import { CardActions, Typography, Button } from '@mui/material';
+
 import Grid from '@mui/material/Grid';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import { Topnav } from '../Topnav';
 
 
 export default function AboutUs() {
@@ -16,6 +14,7 @@ export default function AboutUs() {
   return (
   
  <>
+ <Topnav/>
  <Navbar/>
  <div className='aboutus'>
   <h1 >About Us</h1>
@@ -66,7 +65,7 @@ export default function AboutUs() {
 
     <div className='box'>
       <div className='icon'>
-      <img src='/images/plan.png' height={50} width={50}/>
+      <img src='/images/payment-security.png' height={50} width={50}/>
       </div>
       <div className='content'>
         <h3>• Payment  Protection</h3>
@@ -76,7 +75,7 @@ export default function AboutUs() {
 
     <div className='box'>
       <div className='icon'>
-      <img src='/images/plan.png' height={50} width={50}/>
+      <img src='/images/price-assurance.png' height={50} width={50}/>
       </div>
       <div className='content'>
         <h3>•	Best Price Assurance</h3>

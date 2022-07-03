@@ -31,10 +31,10 @@ function Footer() {
   	 		<div class="footer-col">
   	 			<h4>Get Help</h4>
   	 			<ul>
-  	 				<li><a href="#">Home</a></li>
-  	 				<li><a href="#">About_Us</a></li>
-  	 				<li><a href="#">Contact_Us</a></li>
-  	 				<li><a href="/terms_conditions">Terms & Conditions</a></li>
+  	 				<li><Link to='/'>Home</Link></li>
+  	 				<li><Link to='/about-us'>About_Us</Link></li>
+  	 				<li><Link to='/contact-us'>Contact_Us</Link></li>
+  	 				<li><Link to='/terms_conditions'>Terms & Conditions</Link> </li>
   	 			</ul>
   	 		</div>
   	 		<div class="footer-col">
@@ -44,7 +44,11 @@ function Footer() {
   	 				<a href="#"><i class="fab fa-twitter"></i></a>
   	 				<a href="#"><i class="fab fa-instagram"></i></a>
   	 				<a href="/"><i class="fab fa-linkedin-in"></i></a>
+					
   	 			</div>
+               <div className='card-icons'>
+			   <img src="/images/card-icons.png" alt="card icons" width="250" height="50"/>
+			   </div>
   	 		</div>
   	 	</div>
   	 </div>

@@ -60,7 +60,7 @@ function Cards() {
           <CardHeader
            style={{backgroundColor: "#ff3c00"}}
            avatar={<Avatar alt="Apple" src="images/location.png" />}
-          title="Trusted TRavel Agents in UK"
+          title="Trusted Travel Agents in UK"
           />
           <Divider/>
         <CardContent>
