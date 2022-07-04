@@ -25,7 +25,7 @@ export default function AboutUs() {
   
    </div>
     <div className='about-content'>
-      <h1>About Us</h1>
+      <h1>About The Bliss Flight</h1>
       <p1>
       Welcome to the world of Blessings where all your travel dreams come true! Do you always dream about perfect holiday? But you are confused where to get the best cheap deals for your holidays 
       or business trips? Then Bliss Flights is the right choice for you! If you wish to travel far and fast like travel light, pack your entire wish and take off all your troubles. Yes! Bliss Flights makes your dream come true.

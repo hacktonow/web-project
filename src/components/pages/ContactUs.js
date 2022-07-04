@@ -53,7 +53,7 @@ export default function ContactUs(){
           <input type="text" placeholder="Enter your email"/>
         </div>
         <div class="input-box message-box">
-        <textarea/>
+        <textarea className="textarea"/>
         </div>
           </form>
           <button className="button" >Submit</button>

@@ -61,6 +61,7 @@
   background-color: #ff3c00;
   border-radius: 4px;
   transition: all 0.2s ease-out;
+  color: #fff;
 }
 
 .fa-bars {
@@ -101,6 +102,7 @@
   }
 
   .nav-links {
+
     text-align: center;
     padding: 2rem;
     width: 100%;

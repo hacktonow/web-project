@@ -161,12 +161,18 @@
     }
 
 
+
     .about-image{
         margin-left: 20px;
    height: 200px;
    width: 150px;
        
 
+    }
+    .aboutus h1{
+
+        font-size: 50px;
+        
     }
     .about-content h1{
 
