@@ -9,7 +9,7 @@ export default function MiddleEast() {
     <>
     <Topnav/>
     <Navbar/>
-     <h1 className='desti'>Middle East</h1>;
+     <h1 className='desti'>Holidays</h1>;
 
      <Footer/>
     </>

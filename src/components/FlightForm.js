@@ -5,7 +5,7 @@ import {Grid, TextField,Typography, Button, makeStyles  } from "@material-ui/cor
 
 
 // import Autocomplete from '@mui/material/Autocomplete';
-
+import './Flightform.css'
 import Stack from '@mui/material/Stack';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -38,8 +38,8 @@ btn:{
   
 '&:hover':{
 
-  backgroundColor:'white',
-  color: "black",
+  backgroundColor:'#ff3c00',
+  color: "white",
 }
 
 }
@@ -140,10 +140,11 @@ export default function FlightForm  ()  {
   return (
 
     //form 
-  <>  <React.Fragment>
-      <Typography variant="h5" gutterBottom>
-        Book Flight
-      </Typography>
+  <> 
+   <React.Fragment>
+      <h3 className='form-heading'> Book Flight</h3>
+       
+      
 
          {/* container */}
       <Grid container spacing={2} >

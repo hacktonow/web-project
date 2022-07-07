@@ -1,15 +1,42 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import { Email } from '@mui/icons-material';
-import CallTwoToneIcon from '@mui/icons-material/CallTwoTone';
-import LocationOnTwoToneIcon from '@mui/icons-material/LocationOnTwoTone';
+
 
 function Footer() {
   return (
+	<>
+	<div className='bottom-bar-top'>
+		<div className='bottom-left'>
+		
+        <div className='img'>
+         <img src='images/bottom-bar-left.png'/>
+		</div>
+		
+		<div className='left-content'>
+			<h2>Get Your Tailor made holiday quote</h2>
+			<p>We're here tailor-make it wasy...</p>
+		</div>
+		 
+		</div>
+		<div className='bottom-right'>
+        <div className='img'>
+         <img src='images/bottom-bar-right.png'/>
+		</div>
+		<div className='left-content'>
+			
+			<p>For Booking & Latest Offers</p>
+			<p>Call Our Experts Now</p>
+			<h2>0203927 7690</h2>
+		</div>
+		</div>
+	
+	</div>
+	
     <footer class="footer">
+	
   	 <div class="container">
+	  
   	 	<div class="row">
   	 		<div class="footer-col">
   	 			{/* <img src='logo192.png' className='f-logo'/> */}
@@ -21,15 +48,15 @@ function Footer() {
   	 			
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>Office</h4>
-           <p>10-11 Percy St,</p>
-           <p>London W1T 1DN, United Kingdom</p>
-           <p className='f-email'>Info@theblissflight.com</p>
-           <h3>020 3927 7690</h3>
+  	 			<h4>Get Help</h4>
+           
+		   <h3>       <img src="images/call.png" alt="holiday" width="25" height="25"/>  020 3927 7690</h3>
+           <p className='f-email'> <img src="images/email.png" alt="holiday" width="25" height="25"/>  Info@theblissflight.co.uk</p>
+           
 
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>Get Help</h4>
+  	 			<h4>Menus</h4>
   	 			<ul>
   	 				<li><Link to='/'>Home</Link></li>
   	 				<li><Link to='/about-us'>About_Us</Link></li>
@@ -53,9 +80,9 @@ function Footer() {
   	 	</div>
   	 </div>
      <hr/>
-     <p className='copyright'>The Bliss Fligt © 2022 - All Rights Reserved. </p>
+     <p className='copyright'>The Bliss Fligt © 2022 - All Rights Reserved |<Link className='privacy_link' to='/privacy_policy'> Privacy Policy</Link> </p>
   </footer>
-    
+  </>
   );
 }
 

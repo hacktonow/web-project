@@ -1,14 +1,10 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import { Grid } from '@mui/material';
-import { Avatar, Button, Card, CardActions, CardContent, CardHeader, Divider, IconButton, Paper, Typography } from '@material-ui/core';
-import { fontFamily } from '@mui/joy/styles/styleFunctionSx';
-
 import{makeStyles} from '@material-ui/core'
-import { fontSize } from '@mui/system';
-import { red } from '@mui/material/colors';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const useStyles = makeStyles(theme =>(
   {
     title:{
@@ -25,91 +21,97 @@ function Cards() {
   return (
     
     <div className='cards'>
-      <div className='below-card'>
-        
-        <h2 >BOOK YOUR HOLIDAY WITH COMPLETE CONFIDENCE</h2>
-        <div>
-         <Grid container spacing={4}>
-  
-          <Grid item xs={12} lg={4}>
-          <Card sx={{ minWidth: 275  }} elevation={1} >
-          <CardHeader
-           
-           style={{backgroundColor: "#ff3c00", fontFamily:"Swis721 BT"}}
-           avatar={<Avatar alt="Apple" src="images/plan.png" />}
-          title="Hassle-free Booking "
-          />
+      
+      <div className='card-middle'>
+      <div className='card-middle-left'>
+      <h2>Why our customers love Us?</h2>
+      <p>Presenting the most dependable. Travel solutions from Londonto the 
+        world over. We are trusted widely by people. Our<br/>
+        customers can completely depend on us for end to end travel solutions,
+        while all they neend to do is pack their bag and arrive in style!
+      </p>
+      
+      <h3>Why book with Bliss Flights?</h3>
+      <div className='card-middle-left-p1'>
+      < CheckCircleIcon className='icons'/>
+      <p1> Price Match Guarantee*</p1>
+      <br/>
+      < CheckCircleIcon className='icons'/>
+      <p1> No fee on credit & debit card transactions</p1>
+      <br/>
+      < CheckCircleIcon className='icons'/>
+      
+      <p1> Exlusive deals for hundreds of destinations</p1>
+      <br/>
+      < CheckCircleIcon className='icons'/>
+      <p1> 24/7 assistance by Travel Experts</p1>
+      
+      <br/>
+      < CheckCircleIcon className='icons'/>
+      <p1> Low Deposites</p1>
+      </div>
+          </div>
+          <div className='card-middle-right'>
+          <h3>*with in 24hrs of booking</h3>
           
-          <Divider/>
-        <CardContent>
-          <Typography variant="body2">
-          Bliss Flights is the UK's largest independent travel agent.
-           Whether you'd like a short UK break, a sunny package holiday,
-            an all inclusive getaway or something else entirely,
-             our team will help you book the holiday of your dreams.
-           
-           
-          </Typography>
-        </CardContent>
-        
-      </Card>
-            
-          </Grid>
-          <Grid item xs={12} lg={4}>
-          <Card sx={{ minWidth: 275 }} elevation={1}>
-          <CardHeader
-           style={{backgroundColor: "#ff3c00"}}
-           avatar={<Avatar alt="Apple" src="images/location.png" />}
-          title="Trusted Travel Agents in UK"
-          />
-          <Divider/>
-        <CardContent>
-          <Typography variant="body2">
-          Our Peace of Mind Guarantee means you can enjoy flexible, secure holidays, 
-          with free amendments up to 14 days before your departure date (Fare Diff Applicable). 
-           
-           
-          </Typography>
-        </CardContent>
-        
-      </Card>
-            
-          </Grid>
-          <Grid item xs={12} lg={4}>
-          <Card sx={{ minWidth: 275 }} elevation={1} >
-          <CardHeader
-         style={{backgroundColor: "#ff3c00"}}
-         
-          avatar={<Avatar alt="Apple" src="images/man.png" />}
-          title="Expert Travel Advice"
-          />
-  <Divider  />
-  
-        <CardContent>
-          <Typography variant="body2">
-          As one of the country’s leading holiday companies, we provide holidays worth getting excited for. 
-          Book your holiday with one of our expert travel agents today.
-           
-           
-          </Typography>
-        </CardContent>
-        
-      </Card>
-            
-          </Grid>
-          
-          
-          
-  
-  
-  
-  
-         </Grid>
-         </div>
-        </div>
+          </div>
+          </div>
+     
         {/* this section for cards */}
-      <h1>Check out these EPIC Destinations!</h1>
+      
       <div className='cards__container'>
+      <h2>BOOK YOUR HOLIDAY WITH COMPLETE CONFIDENCE</h2>
+      <div className='home-box-container'> 
+   
+   <div className='box-container'>
+    <div className='box'>
+      <div className='icon'>
+      <img src='/images/plan.png' height={50} width={50}/>
+      </div>
+      <div className='content'>
+        
+        <h3>• Hassle-free Booking</h3>
+        <p>Bliss Flights is the UK's largest independent travel agent. Whether you'd like a short UK break, a sunny package holiday, an all inclusive getaway or something else entirely, our team will help you book the holiday of your dreams.
+
+</p>
+        
+      </div>
+
+      
+    </div>
+
+    <div className='box'>
+      <div className='icon'>
+      <img src='/images/location.png' height={50} width={50}/>
+      </div>
+      <div className='content'>
+        <h3>• Trusted Travel Agents in UK
+</h3>
+        <p>Our Peace of Mind Guarantee means you can enjoy flexible, secure holidays, with free amendments up to 14 days before your departure date (Fare Diff Applicable).
+
+</p>
+      </div>  
+    </div>
+
+    <div className='box'>
+      <div className='icon'>
+      <img src='/images/man.png' height={50} width={50}/>
+      </div>
+      <div className='content'>
+        <h3>•	BExpert Travel Advice
+</h3>
+        <p>As one of the country’s leading holiday companies, we provide holidays worth getting excited for. Book your holiday with one of our expert travel agents today.
+
+</p>
+      </div>
+
+      
+    </div>
+
+   </div>
+  </div>
+        
+      <h1>Check out these EPIC Destinations!</h1>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
@@ -146,8 +148,11 @@ function Cards() {
             />
           </ul>
         </div>
+        
       </div>
-      
+      <div className='card-middle'>
+        <img src="images/Holiday.png" alt="holiday" width="400" height="300"/>
+        </div>
      
     </div>
   );

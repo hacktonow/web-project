@@ -3,7 +3,7 @@ import '../../App.css';
 
 import './aboutUs.css'
 
-import Grid from '@mui/material/Grid';
+
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { Topnav } from '../Topnav';
@@ -42,7 +42,7 @@ export default function AboutUs() {
         <br/>
         <br/>
         You can call our experienced call center team any time to book a flight and to know about your flight details, we are here right at your service whenever you need us.
-         So call us today and stop dreaming & start traveling with Dream World Travel.
+         So call us today and stop dreaming & start traveling with Bliss Flights Travel.
       </p1>
     </div>
   </div>

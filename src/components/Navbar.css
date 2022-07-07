@@ -20,10 +20,13 @@
 .navbar-logo {
   color: rgb(8, 8, 8);
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  margin-right: 80px;
+  font-family: 'Fredoka One';
+  font-weight: 700;
   
 }
 
