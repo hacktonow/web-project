@@ -2,8 +2,6 @@ import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 import{makeStyles} from '@material-ui/core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const useStyles = makeStyles(theme =>(
   {
@@ -19,16 +17,16 @@ function Cards() {
  
   const classes = useStyles();
   return (
-    
+    <>
     <div className='cards'>
       
       <div className='card-middle'>
       <div className='card-middle-left'>
       <h2>Why our customers love Us?</h2>
-      <p>Presenting the most dependable. Travel solutions from Londonto the 
-        world over. We are trusted widely by people. Our<br/>
-        customers can completely depend on us for end to end travel solutions,
-        while all they neend to do is pack their bag and arrive in style!
+      <p>
+      Presenting the most dependable. Travel solutions from London to the world over. We are trusted widely by people. Our<br/>
+customers can completely depend on us for an end to end travel solutions, while all they need to do is pack their bags and arrive in style!
+
       </p>
       
       <h3>Why book with Bliss Flights?</h3>
@@ -150,11 +148,13 @@ function Cards() {
         </div>
         
       </div>
-      <div className='card-middle'>
-        <img src="images/Holiday.png" alt="holiday" width="400" height="300"/>
-        </div>
+     <div className='end-img-container'>
+      
+     </div>
      
     </div>
+    
+    </>
   );
 }
 

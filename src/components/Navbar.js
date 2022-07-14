@@ -119,15 +119,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li>
-              <Link
-                to='/book'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Book Flight
-              </Link>
-            </li>
+           
           </ul>
           <DialogActions>
         

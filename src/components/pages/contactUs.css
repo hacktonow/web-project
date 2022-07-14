@@ -125,6 +125,7 @@
       width: 100%;
       padding: 30px 40px 40px 35px ;
     }
+   
 
     
 
@@ -157,9 +158,12 @@
    }
    .contact-container h2{
      
-    
+    font-size: 25px;
     text-align: center;
 
+  }
+  .contactus{
+    font-size: 50px;
   }
   }
   

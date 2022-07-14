@@ -11,12 +11,12 @@ h1 {
   text-align: center;
   margin-top: 40px;
 }
-.card-middle img{
-  padding: 30px;
-  
-  height: 600px;
+.end-img-container{
+  height: 500px;
   width: 100%;
  
+  background: url('/images/Holiday.png') center center/cover no-repeat;
+
 }
 .cards__container {
   padding: 1rem;
@@ -296,11 +296,29 @@ max-height: 100%;
     display: none;
   }
   .card-middle img{
-    padding: 30px;
     
-    height: 250px;
-    width: 100%;
+    
+    height: 300px;
+    width: 800%;
+    margin: 0px;
+    position: relative;
+    right: 100px;
+    
    
+  }
+  .cards__container h2{
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .card-middle-left h2{
+    font-size: 23px;
+  }
+  .card-middle-left h3{
+    font-size: 23px;
+  }
+  .card-middle-left-p1 p1{
+    font-size: 18px;
   }
   .below-card h2{
     font-size: 20px;
@@ -314,5 +332,8 @@ max-height: 100%;
        
     display: flex;
     flex-direction: column;
+}
+.end-img-container{
+  display: none;
 }
 }
