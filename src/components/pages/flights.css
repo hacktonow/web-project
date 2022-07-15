@@ -3,7 +3,7 @@
 }
 .Top-Container
 {
-    background-image: url('/images/img-2.jpg');
+    background-image: url('/images/flights/top-bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@
    color: #fff;
 }
 .card-topbar p {
-    margin-left: 40px;
+    margin-left: 25px;
     color: #fff;
     
  }
@@ -115,10 +115,10 @@
  }
  .card-topbar img{
     height: 40px;
-    width: 70px;
+    width: 100px;
     position: relative;
-    left: 250px;
-    bottom: 80px;
+    left: 240px;
+    bottom: 83px;
  }
  .cards-button{
     background-color: rgb(112, 110, 110);
@@ -150,7 +150,7 @@
     
  }
 .card2-container {
-    margin: 70px;
+    margin: 90px;
     display: flex;
     justify-content: space-between;
 }

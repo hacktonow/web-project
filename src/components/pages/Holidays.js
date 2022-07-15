@@ -10,7 +10,9 @@ export default function Holidays() {
     <Topnav/>
     <Navbar/>
     <div className='top-conatainer'>
-     <h1 className='desti'>Holidays</h1>;
+     <div className='holiday-to-img'>
+      <h1>Holidays</h1>
+      </div>
      </div>
      <div className='h-main-conatainer'>
       <div className='h-first-container'>
@@ -29,7 +31,8 @@ export default function Holidays() {
               <h4>United States</h4>
               <h5>California & Canyons</h5>
               <p>Begin your all-American self-drive Journey in the bay city of San Francisco. Prepare to have your senses dazzled by the neon lights and showmanship of Sin City, a sizzling metropolis in the middle of the desert. Go celeb-spotting in Hollywood, shop till you drop in Beverly Hills, and hike Runyon Canyon for stunning views over the city. </p>
-            </div>
+            <button>020 3927 7690</button>
+        </div>
           </div>
           <div className='first-card'>
           <div className='card-image-2'>
@@ -40,6 +43,7 @@ export default function Holidays() {
                 <h5>Bangkok, Jungle & Beach</h5>
                 <p>Combining the bustle of Bangkok with the charm of Chiang Mai and the relaxing paradise of Phuket. this Classic Journey offers dazzling temples and historic shrines, mouth-watering local cuisine, and the chance to soak up the sun on one of Thailand’s most beautiful beaches. While chilling out here, why not take a day to explore nearby James Bond Island?
  </p>
+ <button>020 3927 7690</button>
               </div>
             </div>
             <div className='first-card'>
@@ -49,8 +53,9 @@ export default function Holidays() {
             <div className='card-content'>
               <h4>MAURITIUS</h4>
               <h5>Beyond The Beaches</h5>
-              <p>The pristine shores of Mauritius have been attracting foreign visitors for centuries. Its varied history is evident in the colonial plantation homes and Creole cuisine. Nature abounds in the volcanic island’s interior with rainforests, waterfalls, hiking, and mountain bike trails. The beaches of Mauritius are beautiful and undoubtedly worthy of thorough exploration.
+              <p>The pristine shores of Mauritius have been attracting foreign visitors for centuries. Its varied history is evident in the colonial plantation homes and Creole cuisine. Nature abounds in the volcanic island’s interior with rainforests, waterfalls, hiking, and mountain bike trails. The beaches of Mauritius are beautiful and  worthy of thorough exploration.
 </p>
+<button>020 3927 7690</button>
             </div>
             </div>
           
@@ -78,7 +83,7 @@ And with thousands of Bliss Flights Travel Consultants across the globe, we have
      <div className='h-forth-container'>
       <div className='image-forth-container'>
       <h2>WE KNOW IT'S NOT JUST TRAVEL MONEY</h2>
-      <h5>WE KNOW IT'S NOT JUST TRAVEL MONEY</h5>
+      <h5>It's discovering something new or really, really old</h5>
       </div>
      </div>
      <div className='h-third-container'>

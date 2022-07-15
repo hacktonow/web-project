@@ -107,7 +107,13 @@ customers can completely depend on us for an end to end travel solutions, while 
     </div>
 
    </div>
+   
   </div>
+  <div className='end-img-container'>
+      <div className='image-sos'>
+        
+      </div>
+     </div>
         
       <h1>Check out these EPIC Destinations!</h1>
         <div className='cards__wrapper'>
@@ -148,9 +154,7 @@ customers can completely depend on us for an end to end travel solutions, while 
         </div>
         
       </div>
-     <div className='end-img-container'>
-      
-     </div>
+     
      
     </div>
     

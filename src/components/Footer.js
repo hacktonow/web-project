@@ -80,7 +80,7 @@ function Footer() {
   	 	</div>
   	 </div>
      <hr/>
-     <p className='copyright'>The Bliss Fligt © 2022 - All Rights Reserved |<Link className='privacy_link' to='/privacy_policy'> Privacy Policy</Link> </p>
+     <p className='copyright'>The Bliss Flight © 2022 - All Rights Reserved |<Link className='privacy_link' to='/privacy_policy'> Privacy Policy</Link> </p>
   </footer>
   </>
   );

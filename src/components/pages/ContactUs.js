@@ -39,7 +39,7 @@ export default function ContactUs(){
         <div class="address details">
           <i class="fas fa-envelope"></i>
           <div class="topic">Email</div>
-          <div class="text-two">Info@theblissflight.com</div>
+          <div class="text-two">Info@theblissflight.co.uk</div>
         </div>
       </div>
       <div class="right-side">

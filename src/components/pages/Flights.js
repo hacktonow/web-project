@@ -24,7 +24,7 @@ export default function Flights() {
 <div className='card-container'>
   <div className='f-card-1'>
   <div className='card-topbar'>
-   <h4>COUNTERY</h4>
+   <h4>Abuja</h4>
    <p>Abuja</p>
    <h3>£432 </h3>
    <img src='images/flights/cardicons/Emrit.png'/>
@@ -33,7 +33,7 @@ export default function Flights() {
   </div>
   <div className='f-card-2'>
     <div className='card-topbar'>
-    <h4>COUNTERY</h4>
+    <h4>Accra</h4>
    <p>Accra</p>
    <h3>£471 </h3>
 
@@ -43,7 +43,7 @@ export default function Flights() {
     </div>
     <div className='f-card-3'>
     <div className='card-topbar'>
-    <h4>COUNTERY</h4>
+    <h4>Colombo</h4>
    <p>Colombo</p>
    <h3>£501 </h3>
    <img src='images/flights/cardicons/etehad copy.png'/>
@@ -56,29 +56,29 @@ export default function Flights() {
 <div className='card-container'>
   <div className='f-card-4'>
   <div className='card-topbar'>
-   <h4>COUNTERY</h4>
+   <h4>Entebbe</h4>
    <p>Entebbe</p>
    <h3>£389 </h3>
-   <img src='images/flights/cardicons/etehad copy.png'/>
+   <img src='images/flights/cardicons/Qatar_Airways.png'/>
   </div>
   <button className='cards-button'>BOOK NOW </button>
   </div>
   <div className='f-card-5'>
     <div className='card-topbar'>
-    <h4>COUNTERY</h4>
+    <h4>Freetown</h4>
    <p>Freetown</p>
    <h3>£558 </h3>
 
-   <img src='images/flights/cardicons/Emrit.png'/>
+   <img src='images/flights/cardicons/KLM-Royal-Dutch-Airlines.png'/>
   </div>
   <button className='cards-button'>BOOK NOW </button>
     </div>
     <div className='f-card-6'>
     <div className='card-topbar'>
-    <h4>COUNTERY</h4>
+    <h4>Kathmandu</h4>
    <p>Kathmandu</p>
    <h3>£511 </h3>
-   <img src='images/flights/cardicons/Turkish.png'/>
+   <img src='images/flights/cardicons/brussels-airlines.png'/>
   </div>
   <button className='cards-button'>BOOK NOW </button>
     </div>
